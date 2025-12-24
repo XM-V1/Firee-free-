@@ -1,0 +1,53 @@
+index.html<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>ID kiritish</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 100px;
+        }
+        input {
+            padding: 12px;
+            width: 250px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            background: #22c55e;
+            color: black;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>O‘yin ID ni kiriting</h1>
+
+    <input id="playerId" type="text" placeholder="Masalan: 123456789">
+    <br>
+    <button onclick="yubor()">Yuborish</button>
+
+    <script>
+        function yubor() {
+            let id = document.getElementById("playerId").value;
+
+            if (id === "") {
+                alert("ID kiritilmadi!");
+            } else {
+                alert("Siz kiritgan ID: " + id);
+            }
+        }
+    </script>
+
+</body>
+</html>
